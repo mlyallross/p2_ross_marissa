@@ -1,0 +1,468 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+.logo {
+	padding: 2% 1%;
+	max-width: 50px;
+}
+
+.internal_bio {
+	width: 15%;
+	max-width: 70px;
+	padding: 1%;
+}
+
+
+.sidenav {
+	display: none;
+}
+
+/* ********** START HAMBURGER MENU STYLES ********** */
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#5C6672;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#5C6672;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-family: 'Open Sans'; font-weight:bold; font-size:0.8em; width:100%; background:#d9dbe9;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block; background:#0380b0; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid; color: #ffffff;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #ffffff; text-decoration:none; }
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#ffffff;}
+/* ********** END HAMBURGER MENU STYLES ********** */
+
+.woods {
+	width: 100%;
+}
+
+.woods_desktop {
+	display: none;
+}
+
+h1 {
+	display: none;
+}
+
+article.Barbara-mobile {
+    background-color: #5ea5c6;
+		color:#d9dbe9;
+		margin-top: 6%;
+}
+
+h2.Barbara {
+	font-family: Rochester;
+	font-size:2.5rem;
+}
+
+h2.master {
+    font-family: 'Open Sans';
+		font-size: 1.5rem;
+}
+
+h2.Barbara,.master {
+	padding: 4% 2%;
+}
+
+article.biofeedback {
+	background-color: #bfd6a5;
+	font-family: 'Open Sans';
+	text-align: center;
+	padding: 4% 2%;
+	margin-top: 4%;
+}
+
+h3.main {
+	color: #0380b0;
+	padding-bottom: 3%;
+	text-decoration: underline;
+	font-size: 2rem;
+}
+
+p.bio_def {
+	font-size: 1.3rem;
+	color: #5C6672;
+}
+
+figcaption.child_bio1 {
+	font-family: 'Open Sans';
+	text-align:center;
+	font-size: .8rem;
+	padding-bottom: 2%;
+	font-style: italic;
+}
+
+.bio1 {
+	width: 100%;
+	padding: 2% 0 0 0;
+}
+
+p {
+	color: #5C6672;
+	font-family: 'Open Sans';
+	padding: 1.8%;
+}
+
+p.p_life {
+	background-color: #5C6672;
+	color: #ffffff;
+	font-family: 'Open Sans';
+	padding: 1.8%;
+}
+
+h2.about_bio {
+	font-family: Rochester;
+	color: #0380b0;
+	font-size: 2rem;
+	text-align: center;
+	text-decoration: underline;
+	padding: 2% 0;
+}
+
+.life_logo {
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+	width: 30%;
+	padding: 2% 0 0 0;
+}
+
+aside {
+	background-color: #5C6672;
+}
+
+footer {
+	margin-top: 4%;
+	padding: 2% 0;
+	text-align: center;
+	background-color: #5C6672;
+}
+
+footer.bio_footer {
+	margin-top: 0;
+	background-color: #669840;
+}
+
+footer img {
+	max-width: 40px;
+	padding: 0 1%;
+}
+
+
+/********** START 400PX MIN MEDIA QUERY **********/
+@media (min-width:400px) {
+	.logo {
+		max-width: 60px;
+	}
+
+	.menu {
+		font-size: 1rem;
+	}
+
+	.hamburger, .cross {
+		padding: 4%;
+	}
+
+	h2.Barbara {
+		font-size: 3rem;
+	}
+
+	h2.master {
+		font-size: 1.8rem;
+	}
+
+	h3.main {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	p.p_life {
+		font-size: 1rem;
+		color: #ffffff;
+	}
+
+	h2.about_bio {
+		font-size: 2.3rem;
+
+	}
+
+	h3.life {
+		font-size: 1.8rem;
+	}
+
+	footer img {
+		max-width: 70px;
+	}
+}
+/********** END 400PX MIN MEDIA QUERY **********/
+
+/********** START 530PX MIN MEDIA QUERY **********/
+@media (min-width:530px) {
+	.logo {
+		max-width: 65px;
+	}
+
+	.menu {
+		font-size: 1.3rem;
+	}
+
+	h2.Barbara {
+		font-size: 3.5rem;
+	}
+
+	h2.master {
+		font-size: 2rem;
+	}
+
+	h3.main {
+		font-size: 2.3rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	p.p_life {
+		font-size: 1.2rem;
+	}
+
+}
+/********** END 530PX MIN MEDIA QUERY **********/
+
+/********** START 700PX MIN MEDIA QUERY **********/
+@media (min-width:700px) {
+	.logo {
+		max-width: 70px;
+	}
+
+	.life_logo {
+		width: 40%;
+	}
+	h3.main {
+		font-size: 2.6rem;
+	}
+
+	p {
+		font-size: 1.5rem;
+	}
+
+	p.p_life {
+		font-size: 1.5rem;
+	}
+
+}
+/********** END 700PX MIN MEDIA QUERY **********/
+
+/********** START 1060PX MIN MEDIA QUERY **********/
+@media (min-width: 1060px) {
+	.hamburger, .cross {
+		padding: 2%;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.internal_bio {
+		display: block;
+		max-width: 80px;
+	}
+
+	.gray-logo {
+		max-width: 150px;
+		width: 80%;
+		padding-top: 35%;
+	}
+
+	.life_logo {
+		width: 50%;
+		padding-bottom: 2%;
+	}
+
+	header {
+		padding: 2% 0;
+	}
+
+
+	h1 {
+		display: inline;
+		margin-left: 28%;
+	}
+
+	.Rochester {
+		font-family: 'Rochester';
+		color: #669840;
+		font-size: 2.3rem;
+	}
+
+	.line {
+		font-family: 'Rochester';
+		color: #5C6672;
+	}
+
+	.OpenSans {
+		font-family: 'Open Sans';
+		color: #0380b0;
+		font-size: 1.8rem;
+	}
+
+	.sidenav {
+	display: block;
+  height: 100%;
+  width: 210px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0380b0;
+  overflow-x: hidden;
+	font-size: 1.8rem;
+	font-family: 'Open Sans';
+  padding-top: 2.5%;
+	opacity: .6;
+	text-align: center;
+ }
+
+	.sidenav a {
+		padding: 8% 2% 4% 2%;
+	  text-decoration: none;
+	  display: block;
+		color:#d9dbe9;
+	}
+
+	.sidenav a:hover {
+	  color: #5ea5c6;
+		background-color:#d9dbe9;
+	}
+
+	.woods {
+		display: none;
+	}
+
+	.woods_desktop {
+		display: block;
+		width: 100%;
+	}
+
+	h2.about_bio {
+		font-size:2.8rem;
+	}
+
+	article.Barbara-mobile {
+		display: none;
+	}
+
+
+	p.bio_def {
+		font-size: 1.3rem;
+		color: #000000;
+	}
+
+	article.biofeedback {
+		float: right;
+		width: 30%;
+		max-width:320px;
+		background-color: #83af4c;
+		opacity: .7;
+		position: absolute;
+		margin-left: 65%;
+		margin-top: -18%;
+	}
+
+	main {
+		float: left;
+		width: 65%;
+		padding-bottom:1%;
+	}
+
+	figure {
+		padding: 0 2%;
+	}
+
+	aside {
+		float: right;
+		width: 33%;
+		padding: 3% 1% 11% 1%;
+	}
+
+
+	p {
+		font-size: 1.3rem;
+	}
+
+	p.p_life {
+		font-size: 1rem;
+		padding: 7% 3% 0% 3%;
+	}
+
+
+	footer {
+		margin-top: 15%;
+	}
+
+	footer.bio_footer {
+		clear: both;
+	}
+
+}
+/********** END 1060PX MIN MEDIA QUERY **********/
+
+/********** START BETWEEN 1080PX MIN MEDIA QUERY **********/
+@media (min-width: 1080px) and (max-width:1776px) {
+
+	main {
+		width: 68%;
+	}
+	aside {
+		width: 30%;
+		padding-bottom: 6%;
+	}
+
+	.bio1 {
+		max-width: 700px;
+	}
+
+	p {
+		font-size: 1.1rem;
+	}
+
+	p.p_life {
+		font-size: 1rem;
+	}
+}
