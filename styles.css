@@ -13,7 +13,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 	max-width: 50px;
 }
 
-.internal_bio {
+.internal_logo {
 	width: 15%;
 	max-width: 70px;
 	padding: 1%;
@@ -84,12 +84,12 @@ article.Barbara-mobile {
 }
 
 h2.Barbara {
-	font-family: Rochester;
+	font-family: 'Rochester', serif;
 	font-size:2.5rem;
 }
 
 h2.master {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
 		font-size: 1.5rem;
 }
 
@@ -164,6 +164,113 @@ aside {
 	background-color: #5C6672;
 }
 
+body {
+	font-family: 'Open-Sans', sans-serif;
+}
+
+.body_contact {
+	background: #f2f2f2;
+}
+
+.container {
+	background: #0380B0;
+	color: #D9DBE9;
+  width: 95%;
+  margin: auto;
+	margin-top: 10%;
+}
+
+form ul li {
+	margin: auto;
+}
+
+.submit {
+	background-color: #f2f2f2;
+	padding-top: 3%;
+}
+
+/* start flexing */
+
+
+.container * {
+  box-sizing: border-box;
+}
+
+
+.flex-outer {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flex-outer li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 3%;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 260px;
+  max-width: 260px;
+}
+
+.flex-outer > li > label + * {
+  flex: 1 0 260px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 3%;
+  border: none;
+}
+
+.flex-outer li button {
+  margin: auto;
+  padding: 2% 3%;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+	font-size: 1.3rem;
+}
+
+li.submit {
+	flex: 1 0 260px;
+}
+
+ul .flex-outer {
+	flex: 1 0 260px;
+}
+
+/*end flexing*/
+
+
+/* FOR CONTACT STICKY FOOTER */
+.body_contact {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.site-content {
+	flex: 1;
+}
+
+/* END CONTACT STICKY FOOTER */
+
 footer {
 	margin-top: 4%;
 	padding: 2% 0;
@@ -171,7 +278,7 @@ footer {
 	background-color: #5C6672;
 }
 
-footer.bio_footer {
+footer.internal_footer {
 	margin-top: 0;
 	background-color: #669840;
 }
@@ -180,6 +287,52 @@ footer img {
 	max-width: 40px;
 	padding: 0 1%;
 }
+
+/********** START 358PX MIN MEDIA QUERY **********/
+@media (min-width:358px) {
+
+	.container {
+		text-align: center;
+		margin-top: 10%;
+	}
+
+	.flex-outer {
+		display: inline-block;
+	}
+
+	ul.flex-outer {
+		width:260px;
+	}
+
+	form ul li {
+		margin: auto;
+	}
+
+	.submit {
+		background-color:#0380B0;
+		margin: auto;
+		margin-top: 4%;
+		margin-bottom: 10%;
+	  padding: 4% 3%;
+	  border: none;
+	  background: #333;
+	  color: #f2f2f2;
+	  text-transform: uppercase;
+	  letter-spacing: .09em;
+	  border-radius: 2%;
+		font-size: 1rem;
+	}
+
+	.flex-outer li button {
+		border-radius: 2%;
+		font-size: 1rem;
+	}
+
+
+}
+
+/********** END 358PX MIN MEDIA QUERY **********/
+
 
 
 /********** START 400PX MIN MEDIA QUERY **********/
@@ -227,8 +380,11 @@ footer img {
 	}
 
 	footer img {
-		max-width: 70px;
+		max-width: 50px;
 	}
+
+
+
 }
 /********** END 400PX MIN MEDIA QUERY **********/
 
@@ -262,6 +418,16 @@ footer img {
 		font-size: 1.2rem;
 	}
 
+	form ul li {
+		font-size: 1.2rem;
+	}
+
+	form {
+		margin-bottom: 5%;
+	}
+
+
+
 }
 /********** END 530PX MIN MEDIA QUERY **********/
 
@@ -286,6 +452,36 @@ footer img {
 		font-size: 1.5rem;
 	}
 
+	main.site-content {
+		width: 100%;
+		margin: auto;
+	}
+	.container {
+		margin: auto;
+	}
+
+	form {
+		margin: auto;
+		margin-bottom: 3%;
+	}
+
+	ul.flex-outer {
+		width:360px;
+	}
+
+	label {
+		margin: auto;
+	}
+
+	form ul li {
+		margin: auto;
+	}
+
+	.site-content {
+		flex: 0;
+	}
+
+
 }
 /********** END 700PX MIN MEDIA QUERY **********/
 
@@ -299,7 +495,7 @@ footer img {
 		display: none;
 	}
 
-	.internal_bio {
+	.internal_logo {
 		display: block;
 		max-width: 80px;
 	}
@@ -438,6 +634,11 @@ footer img {
 
 	footer.bio_footer {
 		clear: both;
+	}
+
+	.container {
+		width: 100%;
+		margin: auto;
 	}
 
 }

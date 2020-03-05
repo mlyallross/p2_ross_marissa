@@ -22,8 +22,8 @@
 
 	</head>
 
-	<body>
-		<header class="blog_head">
+	<body class="body_contact">
+		<header class="internal_head">
 
 				<button class="hamburger">&#9776;</button>
 				<button class="cross">&#735;</button>
@@ -33,16 +33,56 @@
 					<li><a href="index.html">home</a></li>
 					<li><a href="aboutme.html">about me</a></li>
 					<li><a href="blog.html">blog</a></li>
+					<li><a href="biofeedback.html">about biofeedback</a></li>
 					<li><a href="testimonials.html">testimonials</a></li>
-					<li><a href="contact.html">contact me</a></li>
 				</ul>
 			</nav>
 
 			<a href="index.html">
-				<img class="internal_bio" src="images/logo.png" title="logo" alt="logo" />
+				<img class="internal_logo" src="images/logo.png" title="logo" alt="logo" />
 			</a>
 	</header>
 
+	<main class="site-content">
+
+		<div class="container">
+	  	<form>
+		    <ul class="flex-outer">
+		      <li>
+		        <label for="first-name">First Name</label>
+		        <input type="text" id="first-name" placeholder="Enter your first name here">
+		      </li>
+		      <li>
+		        <label for="last-name">Last Name</label>
+		        <input type="text" id="last-name" placeholder="Enter your last name here">
+		      </li>
+		      <li>
+		        <label for="email">Email</label>
+		        <input type="email" id="email" placeholder="Enter your email here">
+		      </li>
+		      <li>
+		        <label for="phone">Phone</label>
+		        <input type="tel" id="phone" placeholder="Enter your phone here">
+		      </li>
+		      <li>
+		        <label for="message">Message</label>
+		        <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+		      </li>
+		      <li class="submit">
+		        <button type="submit">Submit</button>
+		      </li>
+		    </ul>
+	  	</form>
+		</div>
+
+	</main>
+
+		<footer class="internal_footer">
+			<img src="images/fb_icon.png" title="facebook" alt="facebook" />
+			<img src="images/ig_icon.png" title="instagram" alt="instagram" />
+			<img src="images/twitter_icon.png" title="twitter" alt="twitter" />
+			<img src="images/email_icon.png" title="email" alt="email" />
+		</footer>
 
 	<script src="js/hamburger.js"></script>
 	</body>
