@@ -166,7 +166,7 @@ h2.about_bio {
 	padding: 2% 0 0 0;
 }
 
-aside {
+aside.bio_aside {
 	background-color: #5C6672;
 }
 
@@ -343,7 +343,6 @@ footer img {
 	article.blog1 {
 		margin-left: 9%;
 	}
-
 
 
 }

@@ -46,7 +46,7 @@
 	<main class="site-content">
 
 		<div class="container">
-	  	<form>
+	  	<form method="POST" action="form.php" onsubmit="return validateForm(this)">
 		    <ul class="flex-outer">
 		      <li>
 		        <label for="first-name">First Name</label>
@@ -68,8 +68,8 @@
 		        <label for="message">Message</label>
 		        <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
 		      </li>
-		      <li class="submit">
-		        <button type="submit">Submit</button>
+					<li>
+			      <button type="submit" class="submit">Submit</button>
 		      </li>
 		    </ul>
 	  	</form>
@@ -77,7 +77,7 @@
 
 	</main>
 
-		<footer class="internal_footer">
+		<footer class="internal_footer2">
 			<img src="images/fb_icon.png" title="facebook" alt="facebook" />
 			<img src="images/ig_icon.png" title="instagram" alt="instagram" />
 			<img src="images/twitter_icon.png" title="twitter" alt="twitter" />
