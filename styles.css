@@ -518,8 +518,6 @@ p.blog {
 
 /* END CONTACT STICKY FOOTER */
 
-/*this tag is partly where the homepage is getting messed up - removing "footer" doesn't get rid of the problem completely, but it does get rid of the background color for h1*/
-
 footer {
 	margin-top: 4%;
 	padding: 2% 0;
@@ -852,7 +850,16 @@ footer img {
 		margin-top: -18%;
 	}
 
-	main {
+	main.main-content {
+		width: 100%;
+	}
+
+	footer {
+		margin-top: 13%;
+
+	}
+
+	main.bio-main {
 		float: left;
 		width: 65%;
 		padding-bottom:1%;
@@ -879,9 +886,6 @@ footer img {
 	}
 
 
-	footer {
-		margin-top: 15%;
-	}
 
 	footer.internal_footer {
 		clear: both;
@@ -892,9 +896,6 @@ footer img {
 		margin: auto;
 	}
 
-	section.blogs {
-
-	}
 
 	h2.blog_posts {
 		font-size: 3rem;
