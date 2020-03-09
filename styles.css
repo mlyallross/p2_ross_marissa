@@ -800,7 +800,7 @@ footer img {
 	font-size: 1.8rem;
 	font-family: 'Open Sans';
   padding-top: 2.5%;
-	opacity: .6;
+	opacity: .8;
 	text-align: center;
  }
 
@@ -842,34 +842,46 @@ footer img {
 	article.biofeedback {
 		float: right;
 		width: 30%;
-		max-width:320px;
+		max-width: 300px;
+		max-height: 180px;
 		background-color: #83af4c;
 		opacity: .7;
 		position: absolute;
-		margin-left: 65%;
-		margin-top: -18%;
+		margin-left: 72%;
+		margin-top: -23%;
+		padding: 2% 1%
+		margin-bottom: 2%;
+	}
+
+	h3.main {
+		font-size: 1.9rem;
+	}
+
+	p.bio_def {
+		font-size: 1.1rem;
+	}
+
+	footer {
+		margin-top: 0;
 	}
 
 	main.main-content {
 		width: 100%;
 	}
 
-	footer {
-		margin-top: 13%;
 
-	}
-
-	main.bio-main {
+	main.bio_main {
 		float: left;
-		width: 65%;
-		padding-bottom:1%;
+		max-width: 63%;
+		padding-right: 3%;
+		position: absolute;
 	}
 
 	figure {
-		padding: 0 2%;
+		padding: 0 4%;
 	}
 
-	aside {
+	aside.bio_aside {
 		float: right;
 		width: 33%;
 		padding: 3% 1% 11% 1%;
@@ -919,10 +931,11 @@ footer img {
 /********** START BETWEEN 1080PX MIN MEDIA QUERY **********/
 @media (min-width: 1080px) and (max-width:1776px) {
 
-	main {
+	main.bio_main {
 		width: 68%;
+		margin-bottom: 3%;
 	}
-	aside {
+	aside.bio_aside {
 		width: 30%;
 		padding-bottom: 6%;
 	}
