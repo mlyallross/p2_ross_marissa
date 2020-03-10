@@ -29,6 +29,10 @@ body {
 	display: none;
 }
 
+aside.blog_menu {
+	display: none;
+}
+
 /* ********** START HAMBURGER MENU STYLES ********** */
 .hamburger{
   background:none;
@@ -898,7 +902,6 @@ footer img {
 	}
 
 
-
 	footer.internal_footer {
 		clear: both;
 	}
@@ -922,9 +925,58 @@ footer img {
 		font-size: 1.1rem;
 	}
 
+	article.blog1 {
+		margin-top: 3%;
+	}
+
+	main.site-content {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	aside.blog_menu {
+		display: block;
+		position: absolute;
+		margin-top: 25%;
+		height: 60%;
+		width: 210px;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #0380b0;
+		overflow-x: hidden;
+		font-size: 1.8rem;
+		font-family: 'Open Sans';
+		padding-top: 2.5%;
+		opacity: .8;
+		text-align: center;
+	}
+
+	h2.blog_archive {
+		color: #d9dbe9;
+		font-size: 2rem;
+		margin-bottom: 10%;
+	}
+
+	.blog_menu a {
+		font-size: 1.2rem;
+		text-decoration: none;
+		display: block;
+		padding: 7%;
+		color: #d9dbe9;
+	}
+
+	.blog_menu a:hover {
+		background-color: #d9dbe9;
+		color: #0380b0;
+	}
+
+
 	.read-more,.read-less {
 		font-size: 1rem;
 	}
+
+
 }
 /********** END 1060PX MIN MEDIA QUERY **********/
 
