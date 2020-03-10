@@ -937,8 +937,8 @@ footer img {
 	aside.blog_menu {
 		display: block;
 		position: absolute;
-		margin-top: 25%;
-		height: 60%;
+		margin-top: 12%;
+		height: 95%;
 		width: 210px;
 		z-index: 1;
 		top: 0;
@@ -956,6 +956,7 @@ footer img {
 		color: #d9dbe9;
 		font-size: 2rem;
 		margin-bottom: 10%;
+		margin-top: 60%;
 	}
 
 	.blog_menu a {
