@@ -414,7 +414,7 @@ form {
 /* start flexing */
 
 
-. * {
+ * {
   box-sizing: border-box;
 }
 
@@ -707,9 +707,7 @@ footer img {
 		width: 100%;
 		margin: auto;
 	}
-	. {
-		margin: auto;
-	}
+
 
 	form {
 		margin: auto;
@@ -853,7 +851,7 @@ footer img {
 		position: absolute;
 		margin-left: 72%;
 		margin-top: -23%;
-		padding: 2% 1%
+		padding: 2% 1%;
 		margin-bottom: 2%;
 	}
 
